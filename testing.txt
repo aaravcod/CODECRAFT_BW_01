@@ -1,0 +1,16 @@
+POST /users -- [{ "name": "Aarav Jain", "email": "aarav@example.com", "age": 22 },
+                { "name": "Meera Patel", "email": "meera@example.com", "age": 25 },
+                { "name": "Rohan Kumar", "email": "rohan@example.com", "age": 28 },
+                { "name": "Sana Shaikh", "email": "sana@example.com", "age": 21 }
+               ]
+
+The route supports Both sigle user insertion and multiple user insertion
+
+GET /users      -- return all users  
+GET /users/:id  -- return user with the id
+
+PUT /users/:id  -- update user data by id
+PUT /users      -- update multiple users  (give ids of uses with request)
+
+DELETE /users/:id -- delete single user by id
+DELETE /users/    -- delete multiple user  (give ids of users with request)
